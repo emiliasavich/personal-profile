@@ -5,19 +5,19 @@ function Contact() {
   const contactInfo = [
     {
       title: 'Email',
-      detail: 'your.email@example.com',
-      link: 'mailto:your.email@example.com',
+      detail: 'emiliasavich@gmail.com',
+      link: 'mailto:emiliasavich@gmail.com',
       icon: '📧'
     },
     {
       title: 'Phone',
-      detail: '+1 (555) 123-4567',
-      link: 'tel:+15551234567',
+      detail: '+1 (908) 309-0427',
+      link: 'tel:+19083090427',
       icon: '📱'
     },
     {
       title: 'Location',
-      detail: 'Your City, State',
+      detail: 'Little Egg Harbor, NJ',
       link: null,
       icon: '📍'
     },
@@ -42,17 +42,11 @@ function Contact() {
           <div className="social-media">
             <h4 className="social-title">Follow Me</h4>
             <div className="social-links">
-              <a href="#" className="social-link github">
+              <a href="https://github.com/emiliasavich" className="social-link github">
                 <span className="social-icon">🐙</span> GitHub
               </a>
-              <a href="#" className="social-link linkedin">
+              <a href="https://www.linkedin.com/in/emilia-savich/" className="social-link linkedin">
                 <span className="social-icon">💼</span> LinkedIn
-              </a>
-              <a href="#" className="social-link twitter">
-                <span className="social-icon">🐦</span> Twitter
-              </a>
-              <a href="#" className="social-link instagram">
-                <span className="social-icon">📸</span> Instagram
               </a>
             </div>
           </div>

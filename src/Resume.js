@@ -4,46 +4,70 @@ import './Resume.css';
 function Resume() {
   const education = [
     {
-      degree: "Bachelor of Science in Computer Science",
-      school: "University Name",
-      year: "2020-2024",
-      gpa: "3.8/4.0"
+      degree: "Bachelor of Science in Data Science Computing, with Honors",
+      school: "New Jersey Institute of Technology",
+      details: [
+        "2023-2026",
+        "4.0/4.0"
+      ]
     },
     {
       degree: "High School Diploma",
-      school: "High School Name",
-      year: "2016-2020",
-      gpa: "3.9/4.0"
+      school: "Marine Academy of Technology and Environmental Science (MATES)",
+      details: [
+        "2019-2023",
+        "98.922/100.0",
+        "Valedictorian"
+      ]
     }
   ];
 
   const experience = [
     {
-      title: "Frontend Developer Intern",
-      company: "Tech Company Inc.",
-      period: "Summer 2023",
+      title: "AnatomyQuest Co-Founder",
+      company: "AnatomyQuest, Inc.",
+      period: "January 2026 - Present",
       responsibilities: [
-        "Developed responsive web applications using React and CSS",
-        "Collaborated with design team to implement user interfaces",
-        "Optimized application performance and accessibility"
+        "Co-founded a nonprofit focused on creating measurable improvements in student learning outcomes",
+        "Helped design the website with a strong emphasis on user experience and accessibility",
+        "Cultivated partnerships by reaching out to educators and professionals for feedback and project support"
       ]
     },
     {
-      title: "Teaching Assistant",
-      company: "University CS Department",
-      period: "2022-2023",
+      title: "Tutor",
+      company: "New Jersey Institute of Technology",
+      period: "January 2026 - Present",
       responsibilities: [
-        "Assisted students with programming assignments and projects",
-        "Conducted lab sessions for introductory programming courses",
-        "Graded assignments and provided constructive feedback"
+        "Teaches students foundational concepts in data mining, data structures, and assembly programming",
+        "Fosters a welcoming environment where students feel comfortable asking questions",
+        "Works with students to identify and strengthen their weaknesses"
+      ]
+    },
+    {
+      title: "Vice President of Habitat for Humanity Club",
+      company: "New Jersey Institute of Technology",
+      period: "February 2024 - Present",
+      responsibilities: [
+        "Organizes four to five volunteering events per semester",
+        "Coordinates with the broader Habitat for Humanity organization to run events",
+      ]
+    },
+    {
+      title: "Substitute Teacher",
+      company: "Little Egg Harbor School District",
+      period: "January 2024",
+      responsibilities: [
+        "Oversees preschool through sixth grade classes while the teacher is absent",
+        "Maintains a calm, safe, and supportive learning environment for students",
+        "Explains academic concepts and helps students resolve interpersonal conflicts"
       ]
     }
   ];
 
   const skills = {
-    "Programming Languages": ["JavaScript", "Python", "Java", "C++", "HTML5", "CSS3"],
-    "Frameworks & Libraries": ["React", "Node.js", "Express", "Bootstrap", "jQuery"],
-    "Tools & Technologies": ["Git", "VS Code", "MongoDB", "PostgreSQL", "Figma", "Adobe XD"]
+    "Programming Languages": ["C", "Python", "HTML", "CSS", "JavaScript", "R"],
+    "Frameworks & Libraries": ["React"],
+    "Tools & Technologies": ["Git", "VS Code"]
   };
 
   return (
@@ -63,8 +87,11 @@ function Resume() {
                     <h4 className="item-title">{edu.degree}</h4>
                     <p className="item-subtitle">{edu.school}</p>
                     <div className="item-details">
-                      <span className="item-period">{edu.year}</span>
-                      <span className="item-gpa">GPA: {edu.gpa}</span>
+                      {edu.details.map((detail, i) => {
+                        return (
+                          <span key={'edu-'+index+'-detail-'+i}>{detail}</span>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>

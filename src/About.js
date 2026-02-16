@@ -12,7 +12,7 @@ class About extends Component {
             <img src={profilePic} alt="Profile Picture" className="profile-pic"/>
           </div>
           <div className="text-container">
-            <p>Aspiring physician currently creating <a href="anatomyquest.org">AnatomyQuest</a>: a nonprofit that builds quality educational software accessible to all students.</p>
+            <p>Aspiring physician currently creating <a href="https://anatomyquest.org">AnatomyQuest</a>: a nonprofit that builds quality educational software accessible to all students.</p>
             <p>Senior data science major at NJIT who will be starting Rutgers’ New Jersey Medical School this summer.</p>
             <p>Tutors select courses at the Ying Wu College of Computing.</p>
             <div>

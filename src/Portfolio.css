@@ -1,3 +1,24 @@
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: white;
+}
+
+.buttons > button {
+    font-family: inherit;
+    font-size: 0.8em;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+}
+
 .info-title {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
@@ -21,10 +42,20 @@
     overflow: hidden;
     background-color: black;
     flex-shrink: 0;
+    display: flex;
+    justify-content: center;
 }
 
-.item-image > img {
+.img-contain {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.img-cover {
     object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .item-skills {
@@ -55,6 +86,10 @@
     text-align: center; 
 }
 
+.live-demo {
+    background-color: #027bff;
+}
+
 .portfolio-container {
     display: flex;
     flex-direction: row;
@@ -70,9 +105,13 @@
     /* gap: 20px; */
     justify-content: space-between;
     width: 275px;
-    height: 300px;
+    height: 330px;
     border: 1px black solid;
     box-shadow: 0 0 15px lightgray;
     border-radius: 15px;
     overflow: hidden;
+}
+
+.view-code {
+    background-color: gray;
 }

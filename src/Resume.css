@@ -88,7 +88,7 @@
   flex-wrap: wrap;
 }
 
-.item-period, .item-gpa {
+.item-details > span {
   background-color: #e9ecef;
   color: #495057;
   padding: 0.3rem 0.8rem;
